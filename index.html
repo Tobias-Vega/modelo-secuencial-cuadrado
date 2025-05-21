@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Modelo secuencial simple</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+</head>
+<body>
+
+  <h1>Modelo Secuencial Simple</h1>
+  <p>Formula: y = 2x^2 - 3x + 1</p>
+  <button id="fit-btn">Entrenar modelo</button>
+
+  <div class="hide" id="grafico">
+    <h2>Gráfica de Pérdida durante el entrenamiento</h2>
+    <p id="initial-loss"></p>
+    <p id="final-loss"></p>
+    <p id="reduction"></p>
+  </div>
+
+  <div class="hide" id="prediction">
+    <h2>Predicción</h2>
+    <p>Valores de x separados por comas</p>
+    <input id="input-number" type="text">
+    <button id="predict-btn">Predecir</button>
+  </div>
+  
+
+  <p id="result"></p>
+
+  <script src="./app.js"></script>
+  
+</body>
+</html>
